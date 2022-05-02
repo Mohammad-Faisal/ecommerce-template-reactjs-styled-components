@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/rokkhi-bazar.iml" filepath="$PROJECT_DIR$/.idea/rokkhi-bazar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rokkhi-home-backend/.idea/rokkhi-home-backend.iml" filepath="$PROJECT_DIR$/../rokkhi-home-backend/.idea/rokkhi-home-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rokkhi-products-services-backend/.idea/rokkhi-product-service.iml" filepath="$PROJECT_DIR$/../rokkhi-products-services-backend/.idea/rokkhi-product-service.iml" />
+    </modules>
+  </component>
+</project>

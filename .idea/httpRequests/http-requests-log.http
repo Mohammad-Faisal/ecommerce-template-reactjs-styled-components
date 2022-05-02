@@ -1,0 +1,6 @@
+POST http://localhost:3001/api/v1/getAllCategories
+
+<> 2020-06-14T123609.200.json
+
+###
+

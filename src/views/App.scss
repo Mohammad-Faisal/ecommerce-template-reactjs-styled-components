@@ -1,0 +1,110 @@
+@import './constants.scss';
+
+.container-app {
+  text-align        : center;
+  display           : grid;
+  grid-template-rows: 80px 1fr;
+  background-color  : red($color: #000000);
+}
+
+
+.container-app-mainbar {
+  display              : grid;
+  grid-template-columns: auto 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  .topbar-text {
+    padding-top: 12px;
+    justify-self: start;
+    align-content: center;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .topbar-text{
+    padding: 0px 40px;
+  }
+  .topbar-text:hover {
+    cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .image-banner{
+    margin-top: 80px;
+    max-width: 100%;
+    height: auto;
+    justify-self: center;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .image-banner{
+    max-width: 100%;
+    height: auto;
+    justify-self: center;
+  }
+}
+
+
+
+
+
+.ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,{
+  background: #f5f8fe !important;
+  padding: 10px  !important;
+}
+
+.ant-table-body{
+  margin: 0 !important;
+}
+
+
+
+
+.btn-green {
+  @include card();
+  background: #14AB72;
+  border    : #14AB72;
+  transition: 1000ms;
+  color     : white;
+}
+
+
+.btn-green:focus {
+
+  background: #14AB72;
+  border    : #14AB72;
+  cursor    : pointer;
+  color     : white;
+}
+
+.btn-green:hover {
+  background: #14AB72;
+  border    : #14AB72;
+  cursor    : pointer;
+  color  :white;
+}
+
+.ui.steps .step.active .title{
+  color: $primaryColor;
+}
+
+.mdl-button--raised.mdl-button--colored{
+  background: $primaryColor !important;
+}
+
+.mdl-button--primary.mdl-button--primary{
+  color: $redColor !important;
+}
+
+.ui.inverted.menu .teal.active.item, .ui.inverted.teal.menu{
+  background-color: $primaryColor;
+}
+
+.ui[class*="top attached"].menu{
+  margin-top:-4px;
+}

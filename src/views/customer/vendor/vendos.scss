@@ -1,0 +1,58 @@
+@import '../../constants';
+
+
+.container-vendor-summary {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 1fr;
+  margin            : 10px;
+  text-align: start;
+  grid-column-gap: 20px;
+  font-size: 16px;
+  padding           : 10px 10px;
+  height : fit-content;
+  border-radius: 4px;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+  background: $appBackground;
+  transition: transform .8s;
+}
+.container-vendor-summary :hover{
+  cursor: pointer;
+  //transform: scale(1.2);
+}
+
+
+
+
+.container-vendor-info{
+  display: grid;
+  padding: 0 10px;
+
+  grid-template-rows: auto auto;
+}
+
+.vendor-list-container {
+  display: grid;
+  height: 120px;
+  grid-template-rows: minmax(auto, 1fr);
+  background: #fff;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .vendor-list-container {
+    grid-template-columns: repeat(60, calc(80% - 40px));
+  }
+}
+@media only screen and (min-width: 601px) {
+  .vendor-list-container {
+    grid-template-columns: repeat(60, calc(60% - 40px));
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .vendor-list-container {
+    grid-template-columns: repeat(60, calc(35% - 40px));
+  }
+}

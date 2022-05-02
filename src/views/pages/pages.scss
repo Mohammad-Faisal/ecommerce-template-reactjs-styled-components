@@ -1,0 +1,15 @@
+@import '../constants.scss';
+
+
+
+//confirm order forms
+.container-confirm-order {
+    background: #fff;
+    width     : 100%;
+    height    : auto;
+    @include shadowBottom();
+    padding      : 40px;
+    border-radius: 4px;
+}
+
+

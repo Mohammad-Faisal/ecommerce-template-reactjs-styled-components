@@ -1,0 +1,91 @@
+@import '../../constants';
+
+.container-cart-preview {
+  background-color: $primaryColor;
+  position        : fixed;
+  padding         : 10px 5px;
+  color           : #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-cart-preview{
+    bottom          : 10px;
+    border-radius   : 8px;
+    padding         : 8px 5px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 5%;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container-cart-preview{
+    bottom          : 300px;
+    border-radius   : 8px 0px 0px 8px;
+    right           : 0px;
+  }
+}
+
+
+.container-cart-preview:hover {
+  cursor: pointer;
+}
+
+.cart-preview-items {
+  padding: 10px 20px;
+}
+
+.cart-preview-amount {
+  padding         : 10px 0px;
+  margin          :  2px 8px;
+  border-radius   : 8px;
+  background-color: #fff;
+  color           : $primaryColor;
+  font-weight     : bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .cart-preview-amount {
+    padding         : 8px 16px;
+    border-radius   : 8px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .cart-preview-amount{
+    border-radius   : 4px;
+  }
+}
+
+
+.container-add-to-cart-quantity-horizontal {
+  display              : grid;
+  grid-template-columns: auto 1fr auto;
+  background-color     : $primaryColor;
+  justify-content      : space-evenly;
+  align-items          : center;
+  padding              : 10px;
+  border-radius        : 8px;
+  color                : white;
+  transition           : .3s;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container-add-to-cart-quantity-horizontal {
+    width                : 80px;
+    justify-self: right;
+    padding              : 8px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container-add-to-cart-quantity-horizontal{
+    width                : 100px;
+  }
+}
+
+.container-add-to-cart-quantity-horizontal:hover {
+  cursor: pointer;
+}

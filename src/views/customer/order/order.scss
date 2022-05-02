@@ -1,0 +1,111 @@
+@import '../../constants';
+
+
+.container-page-place-order {
+  background           : $greyColor;
+  display              : grid;
+  align-items          : start;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container-page-place-order {
+    margin-top           : 20px;
+    grid-template-rows: auto auto auto;
+    grid-row-gap      : 20px;
+    padding           : 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container-page-place-order {
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap      : 20px;
+    padding              : 20px;
+  }
+}
+
+
+
+.container-order-details {
+  border-radius   : 4px;
+  padding         : 20px;
+  background-color: #fff;
+  @include shadowBottom();
+  display           : grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .order-details-layout {
+
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .order-details-layout {
+
+  }
+}
+
+
+
+.container-delivery-info-topbar{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+}
+
+.delivery-info-container{
+  display: grid;
+  overflow: auto;
+  align-content: baseline;
+}
+
+.delivery-info-container :hover{
+  cursor: pointer;
+}
+
+.delivery-contact-info-details{
+  padding: 10px;
+  height: fit-content;
+  display: grid;
+  margin:10px 0;
+  border-radius: 4px;
+  text-align: start;
+  background: #eff1f1;
+  border: 1px solid #fff;
+  transition: 500ms;
+  //@include card();
+}
+
+
+//---- order details
+
+.container-previous-order-container{
+  display: grid;
+  grid-template-rows: auto auto;
+  @include card();
+  text-align: start;
+  margin: 20px;
+  padding: 10px;
+}
+
+.container-responsive-two{
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-responsive-two{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container-responsive-two{
+    grid-template-columns: 5fr 3fr;
+  }
+}
